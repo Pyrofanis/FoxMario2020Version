@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Flytrap
+  - Collectable
+  - Tiger
+  - Death
+  - enemy
+  - flyingbox
+  - LeftBirdCollider
+  - RightBirdCollider
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BGLAYER
+    uniqueID: 376880889
+    locked: 0
+  - name: UnderDefault
+    uniqueID: 1026247077
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: HousesAtBack
+    uniqueID: 2996057753
+    locked: 0
+  - name: HousesFront
+    uniqueID: 4037650853
+    locked: 0
+  - name: tileThatWillColapseAndWillKillYou
+    uniqueID: 384858145
+    locked: 0
+  - name: StandableObjectThatWontKIllYOU
+    uniqueID: 2428086479
+    locked: 0
+  - name: ExtraLayerForOBJS
+    uniqueID: 1628783089
+    locked: 0
+  - name: InGameUiLayer
+    uniqueID: 3102768179
+    locked: 0
