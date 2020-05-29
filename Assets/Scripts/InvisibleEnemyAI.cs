@@ -39,7 +39,7 @@ public class InvisibleEnemyAI : MonoBehaviour {
         }
         if (Mathf.Abs(gameObject.transform.position.x - player.transform.position.x) > 5)
         {
-            rb2d.AddForce(new Vector2(20*enemyOrientation, 0.0f));
+            rb2d.AddForce(new Vector2(5*enemyOrientation, 0.0f));
             anim.SetFloat("Speed", 1);
         }
      //when this distance is reached the object becomes active

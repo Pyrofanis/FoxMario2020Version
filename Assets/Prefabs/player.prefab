@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1821403445798487278}
   - component: {fileID: 2103921945797894712}
   - component: {fileID: 3427459969066663558}
+  - component: {fileID: 5927936521883550899}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -224,3 +225,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a34b9c96e61d9ec499b970bc0124d09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathPanel: {fileID: 0}
+  depnlDelay: 0
+--- !u!111 &5927936521883550899
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821403445798487269}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c88adc985e26d3048b32bd32ea2604a8, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b1621f2fbdb341a409ceef02d39791da, type: 2}
+  - {fileID: 7400000, guid: c88adc985e26d3048b32bd32ea2604a8, type: 2}
+  - {fileID: 7400000, guid: 53433e9af23f465419c7174da26102cd, type: 2}
+  - {fileID: 7400000, guid: d371e9cc874e6c54ead411cdd057b6cd, type: 2}
+  - {fileID: 7400000, guid: df797fe6f8a862a4da59b14717c08835, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

@@ -233,6 +233,10 @@ public class PlayerControl : MonoBehaviour {
            
         }
     }
+    public void PointReseter()
+    {
+        points = 0;
+    }
 
     void OnTriggerExit2D(Collider2D other)
     {

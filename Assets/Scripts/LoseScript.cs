@@ -16,7 +16,7 @@ public class LoseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         //it checks if the target is hit if it is a timer is started
         if (isHit)
         {
@@ -88,6 +88,7 @@ public class LoseScript : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
         free = false;
+
 
     }
    

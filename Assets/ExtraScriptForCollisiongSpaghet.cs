@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExtraScriptForCollisiongSpaghet : MonoBehaviour
 {
-    private Animation anime;
+    private Animator anime;
     public GameObject deathPanel;
     public float depnlDelay;
     private Vector2 initialPosition;
@@ -13,17 +13,14 @@ public class ExtraScriptForCollisiongSpaghet : MonoBehaviour
     void Start()
     {
         camera = GameObject.FindGameObjectWithTag("MainCamera");
-        anime = GetComponent<Animation>();
+        anime = GetComponent<Animator>();
         initialPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (anime.clip.name.ToLower().Contains("death"))
-        {
-            DeathpanelControllerDelay();
-        }
+        
         
     }
     IEnumerator DeathpanelControllerDelay()
@@ -37,6 +34,16 @@ public class ExtraScriptForCollisiongSpaghet : MonoBehaviour
         {
             transform.position = initialPosition;
             camera.transform.position = initialPosition;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            anime.SetBool("Dead",true);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+            GetComponent<PlayerControl>().enabled=false;
+            StartCoroutine(DeathpanelControllerDelay());
         }
     }
 }
